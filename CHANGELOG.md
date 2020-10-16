@@ -1,7 +1,10 @@
 # Changelog
 
+## indev 1.1.3 (10/16/2020)
+- Added Links to Team in [README](README.md)
+
 ## indev 1.1.2 (10/16/2020)
-- Tweaking of README.md
+- Tweaking of [README](README.md)
 - Tweaking of CHANGELOG.md
 
 ## indev 1.1.1 (10/16/2020)

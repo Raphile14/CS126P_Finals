@@ -45,17 +45,17 @@ Coop-Multiplayer Survival Game
 
 ## Team
 ### Instructor
-* Sir Joses Lu
+* [Sir Joses Lu](https://github.com/JosesGabriel)
 
 ### Developers
-* Raphael Dalangin - Lead Programmer
-* Bon Jovi Montes
+* [Raphael Dalangin](https://github.com/Raphile14) - Lead Programmer
+* [Bon Jovi Montes](https://github.com/BoJoNVi)
 
 ### Designers
-* Earl Coral - Lead Designer
-* Jarode Gatab
-* Carmina Ditanongun
-* Joshua Hombre
-* Justin Joaquin
+* [Earl Coral](https://github.com/evCoral) - Lead Designer
+* [Jarode Gatab](https://github.com/CODEKanazaki)
+* [Carmina Ditanongun](https://github.com/cnjditanongun)
+* [Joshua Hombre](https://github.com/Hombsss)
+* [Justin Joaquin](https://github.com/blueberry30)
 * Francis Gapuzan
-* Alexander Ferrazzini
+* [Alexander Ferrazzini](https://github.com/dean2699)
