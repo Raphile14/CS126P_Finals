@@ -1,7 +1,6 @@
 # Away From The Cube
 
 ## Purpose
----
 A Unity game development final exam for CS126P.
 
 ## Goals
@@ -41,12 +40,10 @@ Coop-Multiplayer Survival Game
 
 
 ## Notes
----
-[Changelog](CHANGELOG.md)
-[Trello](https://trello.com/b/JgLK3giI/away-from-the-cube)
+* [Changelog](CHANGELOG.md)
+* [Trello](https://trello.com/b/JgLK3giI/away-from-the-cube)
 
 ## Team
----
 ### Instructor
 * Sir Joses Lu
 
