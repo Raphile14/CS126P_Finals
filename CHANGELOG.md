@@ -1,5 +1,10 @@
 # Changelog
 
+## indev 1.2.0 (11/02/2020)
+- Added Player Movement
+- Added Drone Movement
+- Camera Switching
+
 ## indev 1.1.3 (10/16/2020)
 - Added Links to Team in [README](README.md)
 
