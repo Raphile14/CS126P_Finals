@@ -19,6 +19,7 @@ public class PlayerLook : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        MouseSensitivity = PlayerPrefs.GetFloat("MouseSensitivity");
     }
 
     // Update is called once per frame

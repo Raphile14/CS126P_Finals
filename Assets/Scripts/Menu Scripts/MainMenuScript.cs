@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuScript : MonoBehaviour
 {
-    public static float DefaultVolumeLevel = 0.8f;
+    public static float DefaultVolumeLevel = 0.8f;    
+    public static float DefaultMouseSensitivity = 100f;
     public static int DefaultQuality = 5;
     public static bool DefaultFullscreen = true;
 
@@ -25,6 +26,10 @@ public class MainMenuScript : MonoBehaviour
         if (PlayerPrefs.HasKey("ResolutionWidth") && PlayerPrefs.HasKey("ResolutionHeight"))
         {
             Screen.SetResolution(PlayerPrefs.GetInt("ResolutionWidth"), PlayerPrefs.GetInt("ResolutionHeight"), Screen.fullScreen);
+        }
+        if (!PlayerPrefs.HasKey("MouseSensitivity"))
+        {
+            PlayerPrefs.SetFloat("MouseSensitivity", DefaultMouseSensitivity);
         }
     }    
 

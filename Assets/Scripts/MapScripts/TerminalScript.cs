@@ -8,6 +8,7 @@ public class TerminalScript : MonoBehaviour
     private GameObject task, tracker;
     private Light lights;
     private RoomTemplates roomTemplates;
+    private EndingScript endingScript;
     private bool isDone = false;
     private bool isLightsOn = true;
 
@@ -15,6 +16,7 @@ public class TerminalScript : MonoBehaviour
         lights = transform.GetChild(0).gameObject.GetComponent<Light>();
         tracker = transform.GetChild(2).gameObject;
         roomTemplates = GameObject.Find("Station").GetComponent<RoomTemplates>();
+        endingScript = GameObject.Find("Ending Interior").GetComponent<EndingScript>();
         StartCoroutine(lightTimer(0.5F));
     }
 
@@ -73,6 +75,7 @@ public class TerminalScript : MonoBehaviour
 
                     if (roomTemplates.finishedTasks == roomTemplates.totalTasks){
                         roomTemplates.win = true;
+                        endingScript.showExit();
                     }
                 }
             }

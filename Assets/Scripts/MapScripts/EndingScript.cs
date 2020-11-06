@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class EndingScript : MonoBehaviour
 {
-    public GameObject LeftDoor, RightDoor;
+    public GameObject LeftDoor, RightDoor, tracker, pointLight;
     private RoomTemplates roomTemplates;
     private bool gg = false;
 
@@ -32,5 +32,17 @@ public class EndingScript : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene(6);
+    }
+
+    public void showExit(){
+        StartCoroutine(lightTimer(1f));
+    }
+
+    IEnumerator lightTimer(float time){
+        while (Cursor.lockState == CursorLockMode.Locked){
+            yield return new WaitForSeconds(time);
+            pointLight.SetActive(!pointLight.activeSelf);
+            tracker.SetActive(!tracker.activeSelf);
+        }
     }
 }

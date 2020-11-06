@@ -49,7 +49,7 @@ public class RoomTemplates : MonoBehaviour{
         stringSeed = PersistentData.GameSeed;
         difficultyLevel = PersistentData.GameDifficulty;
         if (difficultyLevel == 0){
-            totalTasks = 1;
+            totalTasks = 10;
             totalSyringe = 15;
         } else if (difficultyLevel == 1){
             totalTasks = 20;
@@ -137,8 +137,8 @@ public class RoomTemplates : MonoBehaviour{
             currentObject.transform.SetParent(transform);
         }
         else if (curXArea == -mapSize && curZArea == -mapSize){
-            currentObject = Instantiate(interiors[2], new Vector3(curXArea, 0, curZArea), Quaternion.Euler(0,270,0));
-            currentObject.transform.SetParent(transform);
+            // currentObject = Instantiate(interiors[2], new Vector3(curXArea, 0, curZArea), Quaternion.Euler(0,270,0));
+            // currentObject.transform.SetParent(transform);
         }
         else {
             currentObject = Instantiate(interiors[0], new Vector3(curXArea, 0, curZArea), Quaternion.Euler(0,90 * rand,0));
