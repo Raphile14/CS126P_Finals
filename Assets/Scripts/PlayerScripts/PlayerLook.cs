@@ -8,6 +8,7 @@ public class PlayerLook : MonoBehaviour
     // Mouse sensitivity
     public float MouseSensitivity = 100f;
     public Camera Camera;
+    public bool isScientist;
 
     // Player Reference
     public Transform PlayerBody;
@@ -23,7 +24,7 @@ public class PlayerLook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Camera.enabled)
+        if (Camera.enabled && !PlayerMovement.isDead)
         {
             float MouseX = Input.GetAxis("Mouse X") * MouseSensitivity * Time.deltaTime;
             float MouseY = Input.GetAxis("Mouse Y") * MouseSensitivity * Time.deltaTime;
@@ -33,6 +34,19 @@ public class PlayerLook : MonoBehaviour
 
             transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
             PlayerBody.Rotate(Vector3.up * MouseX);
-        }        
+        }
+        if (PlayerMovement.isDead)
+        {
+            if (isScientist)
+            {
+                Camera.enabled = true;
+                transform.position = new Vector3(transform.position.x, 4, transform.position.z);
+                transform.localRotation = Quaternion.Euler(90, 0f, 0f);
+            }
+            else
+            {
+                Camera.enabled = false;
+            }
+        }
     }
 }

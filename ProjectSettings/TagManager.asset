@@ -4,8 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - SpawnPoints
-  - Rooms
+  - AI
+  - Walls
+  - Terminals
+  - OuterWalls
+  - Cabinets
+  - Floor
   layers:
   - Default
   - TransparentFX
@@ -16,9 +20,9 @@ TagManager:
   - 
   - 
   - Ground
-  - 
-  - 
-  - 
+  - Characters
+  - Detector
+  - PostProcessing
   - 
   - 
   - 

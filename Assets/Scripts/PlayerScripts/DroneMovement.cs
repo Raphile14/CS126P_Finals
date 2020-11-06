@@ -8,10 +8,11 @@ public class DroneMovement : MonoBehaviour
     public CharacterController controller;
     public Transform GroundCheck;
     public Camera DroneCamera;
+    public AudioSource DroneSound;
 
     // Values
-    public float speed = 1.5f;
-    public float rise = 3.0f;
+    public float speed = 7.0f;
+    public float rise = 10.0f;
     public float gravity = -9.81f;
     public float GroundDistance = 0.2f;
     public LayerMask GroundMask;
@@ -27,6 +28,10 @@ public class DroneMovement : MonoBehaviour
         // If drone is active
         if (DroneCamera.enabled)
         {
+            if (!DroneSound.isPlaying)
+            {
+                DroneSound.Play();
+            }
             velocity.y = 0;
 
             // Movement forward and sideward
@@ -57,6 +62,10 @@ public class DroneMovement : MonoBehaviour
             if (isGrounded && velocity.y < 0)
             {
                 velocity.y = -2f;
+            }
+            if (DroneSound.isPlaying)
+            {
+                DroneSound.Stop();
             }
 
             isGrounded = Physics.CheckSphere(GroundCheck.position, GroundDistance, GroundMask);
