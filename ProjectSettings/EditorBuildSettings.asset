@@ -12,12 +12,18 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuScenes/CreateMenu.unity
     guid: 0c2948d01836f7a4498b0eb1aeef2cea
   - enabled: 1
-    path: Assets/Scenes/MenuScenes/JoinMenu.unity
-    guid: d173b515a4da92c4a9f57bb3588fc4ea
-  - enabled: 1
     path: Assets/Scenes/MenuScenes/HowToPlayMenu.unity
     guid: a56930b6b588b8f4ba45b28c1a9875be
   - enabled: 1
-    path: Assets/Scenes/MenuScenes/OptionsMenu.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/MenuScenes/OptionsMenu2.unity
+    guid: 45c8afbf7ecc9af4083bd0caf1ff3848
+  - enabled: 1
+    path: Assets/Scenes/Map.unity
+    guid: c41c297fa0146ce40a24ea86aff78169
+  - enabled: 1
+    path: Assets/Scenes/MenuScenes/DeathScene.unity
+    guid: ac98742442102304a98de8c24bec546b
+  - enabled: 1
+    path: Assets/Scenes/MenuScenes/WinScene.unity
+    guid: ead75b7d2e087ac4ea325ddc9be4ae5e
   m_configObjects: {}
