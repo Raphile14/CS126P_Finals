@@ -8,6 +8,7 @@ public class PauseMenuScript : MonoBehaviour
 
     public static bool isPaused = false;
     public GameObject PauseMenu;
+    public GameObject OptionsPage;
 
     void Update()
     {
@@ -15,7 +16,14 @@ public class PauseMenuScript : MonoBehaviour
         {
             if (isPaused)
             {
-                ResumeGame();
+                if (OptionsPage.activeSelf)
+                {
+                    PauseGame();
+                }
+                else
+                {
+                    ResumeGame();
+                }                
             }
             else
             {
@@ -30,10 +38,12 @@ public class PauseMenuScript : MonoBehaviour
         Time.timeScale = 1f;
         isPaused = false;
         Cursor.lockState = CursorLockMode.Locked;
+        OptionsPage.SetActive(false);
     }
 
     public void PauseGame()
     {
+        OptionsPage.SetActive(false);
         PauseMenu.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
@@ -49,5 +59,11 @@ public class PauseMenuScript : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(0);
+    }
+
+    public void OpenSettings()
+    {
+        PauseMenu.SetActive(false);
+        OptionsPage.SetActive(true);
     }
 }

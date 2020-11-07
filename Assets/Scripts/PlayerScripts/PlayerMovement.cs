@@ -227,7 +227,7 @@ public class PlayerMovement : MonoBehaviour
         postScript.vignette.intensity.Override((100 - stamina) / 100);
         postScript.filmGrain.intensity.Override((100 - stamina) / 100);
 
-        if (health < maxHealth)
+        if (health <= damage)
         {
             postScript.colorAdjustments.saturation.Override(-100);
         }

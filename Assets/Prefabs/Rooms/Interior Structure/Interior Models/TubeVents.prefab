@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6802645954075565983}
   - component: {fileID: 4393720520110974363}
   - component: {fileID: 6619162134374940903}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 6046489546202896508}
   - component: {fileID: 5276803424420092915}
   - component: {fileID: 3444292628567116952}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -199,7 +199,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7708765152710883885}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TubeVents
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -236,7 +236,7 @@ GameObject:
   - component: {fileID: 1640200848918549608}
   - component: {fileID: 3742003272455970358}
   - component: {fileID: 9018140963424341045}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 946043597350879505}
   - component: {fileID: 3807148605128893158}
   - component: {fileID: 4282367516151996388}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

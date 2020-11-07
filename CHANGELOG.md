@@ -1,5 +1,14 @@
 # Changelog
 
+## indev 1.4.0 (11/06/2020)
+- Bug fixes
+- Drone Collision Fix
+- Toned down light intensity
+- Black and white effect if player is one hit
+- Brought back play again with or without seed after a game (win or lose)
+- Options setting in Pause Menu
+- Fix Drone can do task bug
+
 ## indev 1.3.0 (11/06/2020)
 - Tons of Bug Fixes
 - Main Menu (Game Pause)

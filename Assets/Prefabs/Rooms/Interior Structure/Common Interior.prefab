@@ -53,7 +53,7 @@ GameObject:
   - component: {fileID: 5690740974249473951}
   - component: {fileID: 952990800544768787}
   - component: {fileID: 5370339274443301349}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 5757976512693314747}
   - component: {fileID: 5059258588259709841}
   - component: {fileID: 8787212848959675522}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -277,7 +277,7 @@ GameObject:
   - component: {fileID: 3714220063792365095}
   - component: {fileID: 7113127886009270673}
   - component: {fileID: 1420551889773777264}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -466,7 +466,7 @@ GameObject:
   - component: {fileID: 8850410615426058360}
   - component: {fileID: 465745003326523382}
   - component: {fileID: 5220016464649484263}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -612,7 +612,7 @@ GameObject:
   - component: {fileID: 2464705300023512977}
   - component: {fileID: 7273351372087397722}
   - component: {fileID: 6358892215494648067}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -768,7 +768,7 @@ GameObject:
   - component: {fileID: 726311016464988288}
   - component: {fileID: 7465958927753843154}
   - component: {fileID: 144565134813678775}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3004,6 +3004,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2876546487260477183, guid: 8197d7f1bd0876f4fa984f10cc1fcc25, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4290551546764497164, guid: 8197d7f1bd0876f4fa984f10cc1fcc25, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -21,7 +21,7 @@ public class TerminalScript : MonoBehaviour
     }
 
     private void OnTriggerStay(Collider other) {
-        if (task && other.CompareTag("Player")){
+        if (task && other.name == "PlayerObject"){
             if (Input.GetKeyDown(KeyCode.E) && !task.activeSelf){
                 Debug.Log("has pressed E");
                 changeState();
@@ -33,7 +33,7 @@ public class TerminalScript : MonoBehaviour
 
     private void OnTriggerExit(Collider other){
         if (task){
-                if (other.CompareTag("Player") && task.activeSelf){
+            if (other.name == "PlayerObject" && task.activeSelf){
                 changeState();
             }
         }

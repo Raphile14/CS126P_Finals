@@ -40,14 +40,14 @@ public class DroneMovement : MonoBehaviour
 
             Vector3 move = transform.right * x + transform.forward * z;
             controller.Move(move * speed * Time.deltaTime);
-
+            isGrounded = Physics.CheckSphere(GroundCheck.position, GroundDistance, GroundMask);
             // Float up
-            if (Input.GetKey(KeyCode.Space)) {
+            if (Input.GetKey(KeyCode.Space) && !isGrounded) {
                 transform.position = new Vector3(transform.position.x, transform.position.y + (rise * Time.deltaTime), transform.position.z);            
             }
 
             // Float Down
-            else if (Input.GetKey(KeyCode.LeftShift))
+            else if (Input.GetKey(KeyCode.LeftShift) && !isGrounded)
             {
                 transform.position = new Vector3(transform.position.x, (transform.position.y - (rise * Time.deltaTime)), transform.position.z);
             }
@@ -67,7 +67,9 @@ public class DroneMovement : MonoBehaviour
             {
                 DroneSound.Stop();
             }
-
+            if (!isGrounded)
+            {                
+            }
             isGrounded = Physics.CheckSphere(GroundCheck.position, GroundDistance, GroundMask);
             velocity.y += gravity * Time.deltaTime;
             controller.Move(velocity * Time.deltaTime);

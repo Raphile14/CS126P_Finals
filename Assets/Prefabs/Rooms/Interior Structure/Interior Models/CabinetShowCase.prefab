@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3058468119576673786}
   - component: {fileID: 4058278407568589279}
   - component: {fileID: 7382157042687924014}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Picture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 5767251052813430799}
   - component: {fileID: 3302347704397278456}
   - component: {fileID: 1035055265694149067}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 5158566229431292213}
   - component: {fileID: 8222067729638808141}
   - component: {fileID: 6373099456372106162}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 166087428193386105}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CabinetShowCase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -316,7 +316,7 @@ GameObject:
   - component: {fileID: 8208601521524706277}
   - component: {fileID: 1142981630985573523}
   - component: {fileID: 8394972510266370899}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
